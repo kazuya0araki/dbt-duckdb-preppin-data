@@ -1,0 +1,14 @@
+seeds:
+  - name: 2024__week_1__pd_2024_wk_1_input
+    description: "2024: Week 1 - Prep Air's Flow Card"
+    config:
+      alias: pd_2024_wk_1_input
+    columns:
+      - name: "Flight Details"
+        description: "Date//Flight Number//From-To//Class//Price"
+      - name: "Flow Card?"
+        description: "1: Yes, 0: No"
+      - name: "Bags Checked"
+        description: "Checked baggage count"
+      - name: "Meal Type"
+        description: "Special inflight meals"

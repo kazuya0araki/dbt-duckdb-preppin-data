@@ -1,0 +1,35 @@
+
+name: "dbt_duckdb_preppin_data"
+version: "1.0.0"
+
+profile: "dbt_duckdb_preppin_data"
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  +persist_docs:
+    relation: true
+    columns: true
+  dbt_duckdb_preppin_data:
+    pd_2023:
+      +schema: output
+    pd_2024:
+      +schema: output
+
+seeds:
+  dbt_duckdb_preppin_data:
+    pd_2023:
+      +enabled: true
+      +schema: input
+    pd_2024:
+      +enabled: true
+      +schema: input

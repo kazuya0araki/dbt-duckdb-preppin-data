@@ -1,0 +1,13 @@
+dbt_duckdb_preppin_data:
+  outputs:
+    dev:
+      type: duckdb
+      path: databases/sandbox.duckdb
+      threads: 4
+
+    prd:
+      type: duckdb
+      path: databases/pd.duckdb
+      threads: 4
+
+  target: dev

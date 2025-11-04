@@ -1,0 +1,50 @@
+[project]
+name = "dbt-duckdb-preppin-data"
+version = "0.1.0"
+description = "Repository for solving Preppin' Data using SQL (DuckDB) instead of Tableau Prep."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dbt-core>=1.10.13",
+    "dbt-duckdb>=1.9.6",
+    "duckdb>=1.4.1",
+]
+
+[dependency-groups]
+dev = [
+    "sqlfluff>=3.5.0",
+]
+
+[tool.sqlfluff.core]
+dialect = "duckdb"
+templater = "dbt"
+exclude_rules = "AL07, LT09, ST06"
+sql_file_exts = ".sql, .ddl"
+max_line_length = 128
+ignore_paths = [
+    ".*",
+    "databases/",
+    "dbt_modules/",
+    "dbt_packages/",
+    "logs/",
+    "macros/",
+    "target/",
+    "tests/",
+]
+
+[tool.sqlfluff.indentation]
+indent_unit = "space"
+tab_space_size = 2
+indented_joins = false
+indented_ctes = true
+indented_using_on = true
+template_blocks_indent = true
+
+[tool.sqlfluff.layout.type.comma]
+line_position = "trailing"
+
+[tool.sqlfluff.rules.capitalisation.keywords]
+capitalisation_policy = "upper"
+
+[tool.sqlfluff.rules.references.keywords]
+ignore_words = "struct, map, list, extract, epoch_ms, dayofweek, ifnotexists"

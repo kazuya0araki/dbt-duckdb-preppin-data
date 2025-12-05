@@ -1,0 +1,18 @@
+seeds:
+  - name: 2025__challenge_1__input_1
+    description: "2025: challenge 1 - 1. Sales Jan-Feb 25"
+    config:
+      alias: pd_2025__challenge_1__input_1
+    columns:
+      - name: Date
+        description: ""
+      - name: Release_Year
+        description: ""
+      - name: User_Review
+        description: " two pieces of information; a star rating out of 5 and any comments left by customers. Extract only the star rating"
+      - name: Name
+        description: "game titles and their developers"
+      - name: Price_Sold
+        description: ""
+      - name: Place_Sold
+        description: ""

@@ -1,0 +1,16 @@
+models:
+  - name: 2023__week_1__pd_2023_wk_1_output_3
+    description: "Output 3: Total Values by Bank and Customer Code"
+    config:
+      alias: pd_2023_wk_1_output_3
+      materialized: table
+    columns:
+      - name: bank_code
+        data_type: VARCHAR
+        description: ""
+      - name: customer_code
+        data_type: INTEGER
+        description: ""
+      - name: value
+        data_type: INTEGER
+        description: ""

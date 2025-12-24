@@ -1,0 +1,19 @@
+models:
+  - name: 2024__week_1__pd_2024_wk_1_input
+    description: "2024: Week 1 - Prep Air's Flow Card  Input data"
+    config:
+      alias: pd_2024_wk_1_input
+      materialized: table
+    columns:
+      - name: "flight_details"
+        data_type: VARCHAR
+        description: "Date//Flight Number//From-To//Class//Price"
+      - name: "flow_card"
+        data_type: INTEGER
+        description: "1: Yes, 0: No"
+      - name: "bags_checked"
+        data_type: INTEGER
+        description: "Checked baggage count"
+      - name: "meal_type"
+        data_type: VARCHAR
+        description: "Special inflight meals"

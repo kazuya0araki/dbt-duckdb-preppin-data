@@ -20,21 +20,11 @@ models:
     relation: true
     columns: true
   dbt_duckdb_preppin_data:
-    pd_2023:
-      +schema: output
-    pd_2024:
-      +schema: output
-    pd_2025:
-      +schema: output
-
-seeds:
-  dbt_duckdb_preppin_data:
-    pd_2023:
-      +enabled: true
+    0__Input:
       +schema: input
-    pd_2024:
-      +enabled: true
-      +schema: input
-    pd_2025:
-      +enabled: true
-      +schema: input
+      +tags:
+        - input
+    1__Output:
+      +schema: output
+      +tags:
+        - output

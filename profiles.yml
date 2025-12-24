@@ -10,4 +10,4 @@ dbt_duckdb_preppin_data:
       path: databases/pd.duckdb
       threads: 4
 
-  target: dev
+  target: prd

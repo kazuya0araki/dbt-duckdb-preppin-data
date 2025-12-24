@@ -1,0 +1,22 @@
+models:
+  - name: 2023__week_1__pd_2023_wk_1_input
+    description: "2023: Week 1 - The Data Source Bank  Input data"
+    config:
+      alias: pd_2023_wk_1_input
+      materialized: table
+    columns:
+      - name: "transaction_code"
+        data_type: VARCHAR
+        description: "Transaction Code"
+      - name: "value"
+        data_type: INTEGER
+        description: "Value"
+      - name: "customer_code"
+        data_type: VARCHAR
+        description: "Customer Code"
+      - name: "online_or_in_person"
+        data_type: INTEGER
+        description: "Online or In-Person count"
+      - name: "transaction_date"
+        data_type: VARCHAR
+        description: "Transaction Date"

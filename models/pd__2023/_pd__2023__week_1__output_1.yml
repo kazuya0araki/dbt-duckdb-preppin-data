@@ -1,0 +1,13 @@
+models:
+  - name: pd__2023__week_1__output_1
+    description: "Output 1: Total Values of Transactions by each bank"
+    config:
+      alias: week_1__output_1
+      materialized: table
+    columns:
+      - name: bank_code
+        data_type: VARCHAR
+        description: "Bank Code"
+      - name: total_value
+        data_type: INTEGER
+        description: "Total Value"

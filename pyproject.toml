@@ -9,6 +9,8 @@ dependencies = [
     "dbt-duckdb>=1.9.6",
     "duckdb>=1.4.1",
     "pandas>=2.3.3",
+    "polars>=1.36.1",
+    "pyarrow>=22.0.0",
 ]
 
 [dependency-groups]

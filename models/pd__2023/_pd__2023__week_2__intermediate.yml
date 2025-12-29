@@ -1,0 +1,28 @@
+models:
+  - name: pd__2023__week_2__intermediate
+    description: "Intermediate table for 2023: Week 2 - International Bank Account Numbers"
+    config:
+      alias: week_2__intermediate
+      materialized: view
+    columns:
+      - name: transaction_id
+        data_type: VARCHAR
+        description: "Transaction ID"
+      - name: bank_name
+        data_type: VARCHAR
+        description: "Bank name"
+      - name: country_code
+        data_type: VARCHAR
+        description: "Country code"
+      - name: check_digits
+        data_type: VARCHAR
+        description: "Check digits"
+      - name: bank_code
+        data_type: VARCHAR
+        description: "Bank code"
+      - name: sort_code
+        data_type: VARCHAR
+        description: "Sort code"
+      - name: account_number
+        data_type: VARCHAR
+        description: "Account number"

@@ -1,0 +1,19 @@
+models:
+  - name: pd__2023__week_2__input_2
+    description: "2023: Week 2 - International Bank Account Numbers  Input data: Transactions"
+    config:
+      alias: week_2__input_2
+      materialized: table
+    columns:
+      - name: "transaction_id"
+        data_type: VARCHAR
+        description: "Transaction ID"
+      - name: "account_number"
+        data_type: VARCHAR
+        description: "Account Number"
+      - name: "sort_code"
+        data_type: VARCHAR
+        description: "Sort Code"
+      - name: "bank"
+        data_type: VARCHAR
+        description: "Bank name"

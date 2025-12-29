@@ -1,0 +1,19 @@
+models:
+  - name: pd__2023__week_1__output_2
+    description: "Output 2: Total Values by Bank, Day of the Week and Type of Transaction"
+    config:
+      alias: week_1__output_2
+      materialized: table
+    columns:
+      - name: bank_code
+        data_type: VARCHAR
+        description: "Bank Code"
+      - name: online_or_in_person
+        data_type: VARCHAR
+        description: "Online or In-Person count"
+      - name: transaction_day_of_the_Week
+        data_type: VARCHAR
+        description: "Transaction Day of the Week"
+      - name: value
+        data_type: INTEGER
+        description: "Value"

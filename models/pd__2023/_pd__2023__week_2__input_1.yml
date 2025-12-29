@@ -1,0 +1,16 @@
+models:
+  - name: pd__2023__week_2__input_1
+    description: "2023: Week 2 - International Bank Account Numbers  Input data: Swift Codes"
+    config:
+      alias: week_2__input_1
+      materialized: table
+    columns:
+      - name: "bank"
+        data_type: VARCHAR
+        description: "Bank name"
+      - name: "swift_code"
+        data_type: VARCHAR
+        description: "SWIFT Code"
+      - name: "check_digits"
+        data_type: VARCHAR
+        description: "Check Digits"

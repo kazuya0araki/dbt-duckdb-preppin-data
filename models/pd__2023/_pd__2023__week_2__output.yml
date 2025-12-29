@@ -1,0 +1,13 @@
+models:
+  - name: pd__2023__week_2__output
+    description: "Output: IBAN(International Bank Account Numbers)"
+    config:
+      alias: week_2__output
+      materialized: table
+    columns:
+      - name: transaction_id
+        data_type: VARCHAR
+        description: "Transaction ID"
+      - name: iban
+        data_type: VARCHAR
+        description: "International Bank Account Numbers"
